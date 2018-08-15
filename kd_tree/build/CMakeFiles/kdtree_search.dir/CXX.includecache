@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hanwenkai/桌面/source/kd_tree/kdtree_search.cpp
+pcl-1.7/pcl/point_cloud.h
+-
+pcl-1.7/pcl/kdtree/kdtree_flann.h
+-
+iostream
+-
+vector
+-
+ctime
+-
+

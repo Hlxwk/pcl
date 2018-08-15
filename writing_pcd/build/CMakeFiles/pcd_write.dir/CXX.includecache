@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hanwenkai/桌面/source/writing_pcd/writing_pcd.cpp
+iostream
+-
+pcl-1.7/pcl/io/pcd_io.h
+-
+pcl-1.7/pcl/point_types.h
+-
+

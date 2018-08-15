@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hanwenkai/桌面/source/point_cloud_compression/point_cloud_compression.cpp
+pcl-1.7/pcl/point_cloud.h
+-
+pcl-1.7/pcl/point_types.h
+-
+pcl-1.7/pcl/io/grabber.h
+-
+pcl-1.7/pcl/io/openni_grabber.h
+-
+pcl-1.7/pcl/visualization/cloud_viewer.h
+-
+pcl-1.7/pcl/compression/octree_pointcloud_compression.h
+-
+iostream
+-
+sstream
+-
+stdlib.h
+-
+

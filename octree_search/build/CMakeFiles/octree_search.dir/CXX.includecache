@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hanwenkai/桌面/source/octree_search/octree_search.cpp
+pcl-1.7/pcl/point_cloud.h
+-
+pcl-1.7/pcl/octree/octree.h
+-
+iostream
+-
+ctime
+-
+vector
+-
+
