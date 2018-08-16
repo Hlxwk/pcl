@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
-project(fpfh)
+project(iterative_closest_point)
 
 find_package(PCL 1.2 REQUIRED)
 
@@ -9,5 +9,5 @@ link_directories(${PCL_LIBRARY_DIRS})
 add_definitions(${PCL_DEFINITIONS})
 list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4")
 
-add_executable (fpfh fpfh.cpp)
-target_link_libraries (fpfh ${PCL_LIBRARIES})
+add_executable (iterative_closest_point iterative_closest_point.cpp)
+target_link_libraries (iterative_closest_point ${PCL_LIBRARIES})

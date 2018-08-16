@@ -99,7 +99,7 @@ boost::shared_ptr<pcl::visualization::PCLVisualizer> shapesVis (pcl::PointCloud<
   // -----Open 3D viewer and add point cloud-----
   // --------------------------------------------
   boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
-  viewer->setBackgroundColor (0, 0, 0);
+  viewer->setBackgroundColor (0, 0, 0);//背景色
   pcl::visualization::PointCloudColorHandlerRGBField<pcl::PointXYZRGB> rgb(cloud);
   viewer->addPointCloud<pcl::PointXYZRGB> (cloud, rgb, "sample cloud");
   viewer->setPointCloudRenderingProperties (pcl::visualization::PCL_VISUALIZER_POINT_SIZE, 3, "sample cloud");
@@ -116,7 +116,7 @@ boost::shared_ptr<pcl::visualization::PCLVisualizer> shapesVis (pcl::PointCloud<
   //---------------------------------------
   //-----Add shapes at other locations-----
   //---------------------------------------
-  pcl::ModelCoefficients coeffs;
+  pcl::ModelCoefficients coeffs;//std::vector <float> values
   coeffs.values.push_back (0.0);
   coeffs.values.push_back (0.0);
   coeffs.values.push_back (1.0);
@@ -321,7 +321,7 @@ main (int argc, char** argv)
   // ----------------------------------------------------------------
   // -----Calculate surface normals with a search radius of 0.05-----
   // ----------------------------------------------------------------
-  pcl::NormalEstimation<pcl::PointXYZRGB, pcl::Normal> ne;
+  pcl::NormalEstimation<pcl::PointXYZRGB, pcl::Normal> ne;//计算法线
   ne.setInputCloud (point_cloud_ptr);
   pcl::search::KdTree<pcl::PointXYZRGB>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZRGB> ());
   ne.setSearchMethod (tree);
