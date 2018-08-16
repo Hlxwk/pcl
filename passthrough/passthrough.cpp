@@ -6,6 +6,16 @@
 #include<pcl-1.7/pcl/io/pcd_io.h>
 #include<boost/thread/thread.hpp>
 #include<pcl-1.7/pcl/console/parse.h>
+#include <pcl/features/normal_3d.h>
+pcl::PointCloud<pcl::Normal>::Ptr getNormals(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
+{
+    pcl::PointCloud<pcl::Normal>::Ptr getnormal (new pcl::PointCloud<pcl::Normal>);
+    pcl::NormalEstimation<pcl::PointXYZ,pcl::Normal> nor;
+    nor.setInputCloud(cloud);
+    nor.setRadiusSearch(0.05);
+    nor.compute(*getnormal);
+    return(getnormal);
+}
 int main(int argc,char **argv)
 {
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>);
@@ -59,8 +69,11 @@ int main(int argc,char **argv)
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer (new pcl::visualization::PCLVisualizer("111"));
     viewer->createViewPort(0.0, 0.0, 0.5, 1.0, v1);
     //viewer->setBackgroundColor(0,0,0,v1);
+    pcl::PointCloud<pcl::Normal>::Ptr normal1 (new pcl::PointCloud<pcl::Normal>);
+    normal1=getNormals(cloud);
     viewer->addText("original",10,10,"v1 text",v1);
     viewer->addPointCloud(cloud,"original cloud",v1);
+    viewer->addPointCloudNormals<pcl::PointXYZ,pcl::Normal>(cloud,normal1,10,0.05,"normal1");
     viewer->createViewPort(0.5, 0.0, 1.0, 1.0, v2);
     //viewer->setBackgroundColor(0.3,0.3,0.3,v2);
     viewer->addText("filtered",10,10,"v2 text",v2);
