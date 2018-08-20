@@ -110,7 +110,7 @@ int main (int argc, char** argv)
   boost::shared_ptr<pcl::RangeImage> range_image_ptr (new pcl::RangeImage);
   pcl::RangeImage& range_image = *range_image_ptr;   
   range_image.createFromPointCloud (point_cloud, angular_resolution, pcl::deg2rad (360.0f), pcl::deg2rad (180.0f),
-                                   scene_sensor_pose, coordinate_frame, noise_level, min_range, border_size);
+                                   scene_sensor_pose, coordinate_frame, noise_level, min_range, border_size);//produce range image
   range_image.integrateFarRanges (far_ranges);
   if (setUnseenToMaxRange)
     range_image.setUnseenToMaxRange ();
