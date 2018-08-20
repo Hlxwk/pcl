@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hanwenkai/桌面/pcl_source/random_sample_consensus/random_sample_consensus.cpp
+iostream
+-
+pcl-1.7/pcl/console/parse.h
+-
+pcl-1.7/pcl/filters/extract_indices.h
+-
+pcl-1.7/pcl/io/pcd_io.h
+-
+pcl-1.7/pcl/point_types.h
+-
+pcl-1.7/pcl/sample_consensus/ransac.h
+-
+pcl-1.7/pcl/sample_consensus/sac_model_plane.h
+-
+pcl-1.7/pcl/sample_consensus/sac_model_sphere.h
+-
+pcl-1.7/pcl/visualization/pcl_visualizer.h
+-
+boost/thread/thread.hpp
+-
+
