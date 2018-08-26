@@ -12,7 +12,7 @@ int main(int argc,char ** argv)
     pcl::io::loadPCDFile(argv[1],*cloud);
     pcl::PointCloud<pcl::Normal>::Ptr normals (new pcl::PointCloud<pcl::Normal>);
     pcl::IntegralImageNormalEstimation<pcl::PointXYZ,pcl::Normal> ne;
-    ne.setNormalEstimationMethod(ne.AVERAGE_3D_GRADIENT);
+    ne.setNormalEstimationMethod(ne.AVERAGE_3D_GRADIENT); 
     ne.setMaxDepthChangeFactor(0.02f);
     ne.setNormalSmoothingSize(10.0f);
     ne.setInputCloud(cloud);

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hanwenkai/桌面/pcl_source/fpfh_radius/fpfh_radius.cpp
+iostream
+-
+pcl-1.7/pcl/point_types.h
+-
+pcl-1.7/pcl/features/feature_evaluation/feature_evaluation_framework.h
+-
+
