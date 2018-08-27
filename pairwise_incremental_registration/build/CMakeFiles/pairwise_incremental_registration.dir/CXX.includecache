@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hanwenkai/桌面/pcl_source/pairwise_incremental_registration/pairwise_incremental_registration.cpp
+boost/make_shared.hpp
+-
+pcl-1.7/pcl/point_types.h
+-
+pcl-1.7/pcl/point_cloud.h
+-
+pcl-1.7/pcl/point_representation.h
+-
+pcl-1.7/pcl/io/pcd_io.h
+-
+pcl-1.7/pcl/filters/voxel_grid.h
+-
+pcl-1.7/pcl/filters/filter.h
+-
+pcl-1.7/pcl/features/normal_3d.h
+-
+pcl-1.7/pcl/registration/icp.h
+-
+pcl-1.7/pcl/registration/icp_nl.h
+-
+pcl-1.7/pcl/registration/transforms.h
+-
+pcl-1.7/pcl/visualization/pcl_visualizer.h
+-
+

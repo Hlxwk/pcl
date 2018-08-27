@@ -1,4 +1,4 @@
-# Install script for directory: /home/hanwenkai/桌面/icp2
+# Install script for directory: /home/hanwenkai/桌面/pcl_source/icp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/hanwenkai/桌面/icp2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/hanwenkai/桌面/pcl_source/icp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
