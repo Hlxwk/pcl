@@ -12,7 +12,7 @@ int
   pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_out (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::io::loadPCDFile<pcl::PointXYZ>(argv[1],*cloud_in);
   pcl::io::loadPCDFile<pcl::PointXYZ>(argv[2],*cloud_out);  
-
+  
   pcl::IterativeClosestPoint<pcl::PointXYZ, pcl::PointXYZ> icp;
   icp.setInputSource(cloud_in);
   icp.setInputTarget(cloud_out);
